@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Lenscapp : Automatic hashtags for your social app">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Lenscapp</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/peichenc/Lenscapp">View on GitHub</a>
+
+          <h1 id="project_title">Lenscapp</h1>
+          <h2 id="project_tagline">Automatic hashtags for your social app</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/peichenc/Lenscapp/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/peichenc/Lenscapp/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p><b>Hashtags for:</b><br></p>
+
+<ul>
+     <li>Holidays (all countries)<br>
+     </li>
+<li>National Parks (US, Canada)<br>
+     </li>
+<li>Hiking trails (US)<br>
+     </li>
+<li>Events (US)<br>
+</li>
+</ul>
+
+<p><br><br>
+<b>Technology:</b><br>
+Uses your location <i>and</i> time to determine event<br><br></p>
+
+<dl>
+<dt>For example:<br>
+</dt>
+<dd>37.806569°N, -122.429130°W = San Francisco<br>
+<dd>That same location on 2000-07-04 = Independence Day<br>
+</dd>
+</dd>
+</dl>
+
+<p><br>
+<b>RESTful api</b><br>
+To look up keywords &amp; hashtags: <br>
+/keywords/find<br><br></p>
+
+<dl>
+<dt>
+<i>Parameters</i><br>
+</dt>
+<dd>latitude: (double) -90 ~ +90<br>
+<dd>longitude: (double) -180 ~ +180<br>
+<dd>date: In the format of YYYY-MM-DD HH:mm:ss<br>
+<dd>appID: Assigned.  Please contact us at the email address below to get your free key<br>
+<dd>verbose=true (always set this to true)
+</dd>
+</dd>
+</dd>
+</dd>
+</dd>
+</dl>
+
+<p><br>
+<b>Results in JSON format</b><br>
+{<br>
+    "COUNTRY_NAME": [<br>
+        "United States of America"<br>
+    ],<br>
+    "CITY": [<br>
+        "California ; Placer ; United States ; USA"<br>
+    ],<br>
+    "EVENT": [<br>
+        "Halloween"<br>
+    ],<br>
+    "PROVINCE_OR_STATE": [<br>
+        "California ; United States of America ; USA"<br>
+    ],<br>
+    "HASHTAG": [<br>
+        "#Halloween"<br>
+    ],<br>
+    "ALL": [<br>
+        "California ; Halloween ; Placer ; United States ; United States of America ; USA"<br>
+    ]<br>
+}<br>
+<br>
+<b>Support</b><br>
+For more information or to get an API key, please contact us at <a href="mailto:support@lenscapp.com">support@lenscapp.com</a><br></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Lenscapp maintained by <a href="https://github.com/peichenc">peichenc</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
